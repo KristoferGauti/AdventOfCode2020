@@ -23,7 +23,8 @@ def count_valid_passwords(password_policy_list):
         Time complexity: ~n or O(n) where n is the length of the list
         counts a valid password if the password's index contains exactly 
         one of the given letter. Other occurenses of the given letter are 
-        irrelevant passwords, that is why the if statement has an XOR check.    
+        irrelevant passwords, that is why the if statement has an XOR check. 
+        We do minus 1 where the index is not a computer index.   
     """
     valid_password_counter = 0
     for not_a_computer_index, letter, password in password_policy_list:
@@ -39,7 +40,7 @@ def count_valid_passwords(password_policy_list):
 
 
 def main():
-    """Total time complexity: """
+    """Total time complexity: ~2n or O(n)"""
     filename = os.path.join("December2nd", "input.txt")
     password_stream = open(filename, "r")
     striped_password_stream = [password.strip() for password in password_stream]
