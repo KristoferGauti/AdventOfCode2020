@@ -6,7 +6,7 @@ import os
 
 def brute_force_solution(expense_report):
     """
-        Time complexity ~n^2/2 because we have 2 independent for loops
+        Time complexity ~n^2/2 or O(n^2) because we have 2 independent for loops
         That means to take the sum_{i=0}^{n} (i^2) = n^2/2 where n is 
         the length of the list
     """

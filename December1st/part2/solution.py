@@ -6,7 +6,7 @@ import os
 
 def brute_force_solution(expense_report):
     """
-        Time complexity ~n^3/3 because we have 3 independent for loops
+        Time complexity ~n^3/3 or O(n^3) because we have 3 independent for loops
         That means to take the sum_{i=0}^{n} (i^3) = n^3/3 where n is 
         the length of the list
     """
