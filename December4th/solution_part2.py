@@ -31,7 +31,6 @@ def count_valid_passport(passports):
                             (passport_dict['hgt'][-2:] == 'in') and (59 <= int(passport_dict['hgt'][:-2]) <= 76):
                             if (re.search("#[0-9a-f]{6}", passport_dict["hcl"])):
                                 if (passport_dict["ecl"] in ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth']):
-                                    #if passport_dict['pid'].isdigit() and len(passport_dict['pid']) == 9:
                                     if (passport_dict["pid"].isdigit() and len(passport_dict["pid"]) == 9):
                                         passport_valid_counter += 1
     return passport_valid_counter
