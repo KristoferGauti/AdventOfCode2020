@@ -6,9 +6,8 @@ import os
 
 def brute_force_solution(expense_report):
     """
-        Time complexity ~n^3/3 or O(n^3) because we have 3 independent for loops
-        That means to take the sum_{i=0}^{n} (i^3) = n^3/3 where n is 
-        the length of the list
+        Time complexity ~n^3/3 or O(n^3) because we have 3 dependent for loops. We are choosing triplets that sum up to 2020
+        which indicates that NC3 where N is the lenght of the list. Hence n^3 / 3! which is ~n^3/6 
     """
     for i in range(0, len(expense_report)):
         for j in range(1, len(expense_report)):
